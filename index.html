@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario HTML</title>
+  </head>
+  <body align="center">
+    <h1>Formulario de Datos</h1>
+    <form action="">
+      <p>
+      <label for="nombre">Nombre<span class="required"></span></label><br>
+      <input type="text" id="nombre" name="nombre" value="" placeholder="" required/>
+      </p>
+      <p>
+      <label for="apellido">Apellido <span class="required"></span></label><br>
+      <input type="text" id="apellido" name="apellido" value="" placeholder="" required/>
+      </p>
+      <p>
+      <label for="telefono">Teléfono <span class="required"></span></label><br>
+      <input type="text" id="telefono" name="telefono" value="" placeholder="" required/>
+      </p>
+      <p>
+      <label for="opciones">Escoge tu carro para continuar</label><br>
+      <br>
+      <select name="opciones" id="opciones">
+        <option value="opcion1">Volvo</option>
+        <option value="opcion2">Saab</option>
+        <option value="opcion3">Mercedes</option>
+        <option value="opcion4">Audi</option>
+        <option value="opcion4">Otro</option>
+      </select>
+      </p>
+      <p>
+      <label for="email">Email <span class="required"></span></label><br>
+      <input type="email" id="email" name="email" value="" placeholder="" required/>
+      </p>
+      <p>
+        <label for="pw">Crea tu contraseña</label><br>
+        <input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
+      </p>
+      <p>
+        <input type="submit" name="" value="send">
+      </p>
+    </form>
+  </body>
+</html>
